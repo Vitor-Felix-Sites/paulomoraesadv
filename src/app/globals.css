@@ -1,9 +1,17 @@
 @import "tailwindcss";
+ 
 
 :root {
-  --background: #ffffff;
+  --background: #1E2027;
+  --textColor: #FFFFFF;
+  --textSecondaryColor: #F3F4F4;
+  --highlightColor: #DFAE4F;
   --foreground: #171717;
+  --textDark: #1E2027;
 }
+  /* font-family: "Playfair Display", serif; */
+    /* font-family: "Poppins", sans-serif; */
+
 
 @theme inline {
   --color-background: var(--background);
@@ -22,5 +30,37 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+}
+
+
+.v-bg {
+  background-color: var(--background);
+}
+.v-bg-highlight {
+  background-color: var(--highlightColor);
+}
+.v-highlight-color {
+  color: var(--highlightColor);
+}
+.v-text-white {
+  color: var(--textColor);
+}
+.v-bg-white {
+  background-color: var(--textColor);
+}
+
+.v-text-secondary {
+  color: var(--textSecondaryColor);
+}
+
+.v-foreground {
+  color: var(--foreground);
+}
+
+.v-text-dark {
+  color: var(--textDark);
+}
+a{
+  letter-spacing: 4px;
 }
