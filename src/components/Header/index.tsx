@@ -98,7 +98,7 @@ const itemVariants = {
             className="w-full v-bg flex flex-col gap-6 p-6 text-white container-default w-container"
             id="mobile-menu"
           >
-            {["Home", "About me", "Practice areas", "Pages"].map((text) => (
+            {["Início", "Escritório", "Áreas de atuação", "FAQ"].map((text) => (
               <motion.a
                 key={text}
                 href="#"
