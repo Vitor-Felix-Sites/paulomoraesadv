@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://paulomoraesadv.com.br
+
+# Sitemaps
+Sitemap: https://paulomoraesadv.com.br/sitemap.xml
