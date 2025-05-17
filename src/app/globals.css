@@ -113,7 +113,7 @@ header li {
     display: flex;
     position: fixed;
     left: 0;
-    top: 120px;
+    top: 105px;
     width: 100vw;
     height: 100vh;
     z-index: 9999;

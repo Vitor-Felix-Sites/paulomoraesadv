@@ -95,7 +95,7 @@ const itemVariants = {
             animate="visible"
             exit="hidden"
             variants={containerVariants}
-            className="w-full bg-[#1E2027] flex flex-col gap-6 p-6 text-white container-default w-container"
+            className="w-full v-bg flex flex-col gap-6 p-6 text-white container-default w-container"
             id="mobile-menu"
           >
             {["Home", "About me", "Practice areas", "Pages"].map((text) => (
