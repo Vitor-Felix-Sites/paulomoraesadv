@@ -49,7 +49,7 @@ export const Header = () => {
 
   return (
     <div>
-      <header className="flex justify-between items-center h-[105px] w-full px-4 md:px-8 border-b border-[#e5e5e517] bg-[#1E2027] container-default w-container">
+      <header className="flex justify-between items-center py-[20px] px-[40px] relative header w-full">
         <div className="flex items-center gap-2">
           <Image
             src="/logo-dourada.png"

@@ -80,11 +80,7 @@ a{
   letter-spacing: 4px;
 }
 .container-default{
-    max-width: 1224px;
-    margin-left: auto;
-    margin-right: auto;
-        padding-left: 24px;
-    padding-right: 24px;
+  padding: 20px 5rem;
 }
 
 header li {
@@ -106,12 +102,15 @@ header a {
   text-align: center;
   font-weight: bold;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1034px) {
     header ul li a {
       font-size: .8rem;
     }
     #logo{
       width: 60px;
+    }
+    #btn-contact{
+      display: none;
     }
 }
 
@@ -139,7 +138,7 @@ header a {
       margin-bottom: 40px!important;
     }
   }
-  
+
 }   
 
 @media(max-width: 500px){
@@ -148,3 +147,58 @@ header a {
     }
 }
 
+
+.header{
+
+  padding: 20px 5rem;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  right: 5rem;
+  height: 1px;
+  background-color: #333;
+  margin-top: 20px;
+}
+
+@media(max-width: 768px){
+  .header{
+  padding: 20px 2rem;
+
+  }
+  .header::after{
+  left: 2rem;
+  right: 2rem;
+  }
+  .container-default{
+  padding: 20px 2rem;
+}
+}
+
+#hero{
+  background: url('/texture.svg') no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-bg{
+  position: absolute;
+  left: 0!important;
+  top: -2rem;
+  width: 100%;
+  z-index: -1;
+}
+
+
+
+
+.mulish{
+    font-family: 'Playfair Display', serif;
+
+}
