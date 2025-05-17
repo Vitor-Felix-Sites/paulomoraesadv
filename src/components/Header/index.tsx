@@ -5,55 +5,77 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedButton from "../AnimatedButton";
 
+interface AnimatedButtonContactProps {
+  id?: string;
+}
+
+const AnimatedButtonContact: React.FC<AnimatedButtonContactProps> = ({
+  id,
+}) => {
+  return (
+    <AnimatedButton
+      className="uppercase v-bg-highlight px-6 py-[14px] text-white gap-2"
+      id={id}
+      onClick={() => {
+        const url = 'https://api.whatsapp.com/send?phone=558184472360&text=Olá!%20Gostaria%20de%20mais%20informações.';
+          window.open(url, '_blank');
+      }}
+    >
+      
+      <p>Entre em contato</p>
+    </AnimatedButton>
+  );
+};
+
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.1,
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.1,
+        
+      },
     },
-  },
-};
+  };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: -10 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
-  exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
-};
+  const itemVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    exit: { opacity: 0, y: -10, transition: { duration: 0.2 } },
+  };
 
   return (
-    <>
+    <div>
       <header className="flex justify-between items-center h-[105px] w-full px-4 md:px-8 border-b border-[#e5e5e517] bg-[#1E2027] container-default w-container">
         <div className="flex items-center gap-2">
           <Image
-            src="/logo.png"
+            src="/logo-dourada.png"
             alt="Logo Advogado Paulo Moraes"
             width={80}
             height={80}
+            id="logo"
           />
         </div>
 
         <nav className="hidden md:flex items-center gap-[22px] text-white">
           <ul className="flex gap-[42px] uppercase">
             <li>
-              <a href="#">Início</a>
+              <a className="hover:text-[#DFAE4F]" href="#">Início</a>
             </li>
             <li>
-              <a href="#">Escritório</a>
+              <a className="hover:text-[#DFAE4F]" href="#">Escritório</a>
             </li>
             <li>
-              <a href="#">Áreas de atuação</a>
+              <a className="hover:text-[#DFAE4F]" href="#">Áreas de atuação</a>
             </li>
             <li>
-              <a href="#">FAQ</a>
+              <a className="hover:text-[#DFAE4F]" href="#">FAQ</a>
             </li>
           </ul>
-          <AnimatedButton className="uppercase bg-[#DFAE4F] px-[20px] py-[10px] w-[168px] h-[54px] text-white" id="btn-contact">
-            Contato
-          </AnimatedButton>
+          <AnimatedButtonContact id="btn-contact" />
         </nav>
 
         <div className="md:hidden flex items-center gap-4">
@@ -87,7 +109,7 @@ const itemVariants = {
           </AnimatedButton>
         </div>
       </header>
-    <AnimatePresence>
+      <AnimatePresence>
         {isOpen && (
           <motion.div
             key="mobile-menu"
@@ -108,15 +130,10 @@ const itemVariants = {
                 {text}
               </motion.a>
             ))}
-            <AnimatedButton
-              className="uppercase v-bg-highlight px-[20px] py-[10px] w-[168px] h-[54px] text-white"
-              
-            >
-              Contato
-            </AnimatedButton>
+            <AnimatedButtonContact />
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };

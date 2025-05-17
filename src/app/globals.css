@@ -3,7 +3,6 @@
 *{
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 :root {
   --background: #1E2027;
@@ -16,7 +15,9 @@
 }
   /* font-family: "Playfair Display", serif; */
     /* font-family: "Poppins", sans-serif; */
-
+button{
+  cursor: pointer;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -85,18 +86,32 @@ a{
         padding-left: 24px;
     padding-right: 24px;
 }
+
 header li {
   white-space: nowrap;
+  
+  
+}
+header a {
+  transition: all 0.6s ease;
 }
 #mobile-menu {
   display: none;
 }
 #mobile-menu button{
     width: 100%;
+    
+}
+#mobile-menu button p{
+  text-align: center;
+  font-weight: bold;
 }
 @media screen and (max-width: 991px) {
     header ul li a {
       font-size: .8rem;
+    }
+    #logo{
+      width: 60px;
     }
 }
 

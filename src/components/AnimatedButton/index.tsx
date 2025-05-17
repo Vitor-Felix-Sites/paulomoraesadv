@@ -13,36 +13,40 @@ export default function AnimatedButton({
   className = '',
   ...props
 }: AnimatedButtonProps) {
-  const [clicked, setClicked] = useState(false);
+  const [mouseHover, setMouseHover] = useState(false);
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    setClicked(true);
-    setTimeout(() => setClicked(false), 600); // Reseta após a animação (~600ms)
-
-    // Se tiver onClick no props, chama ele também
     if (props.onClick) {
       props.onClick(e);
+    }
+  };
+
+  const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setMouseHover(true);
+    setTimeout(() => setMouseHover(false), 600);
+    if (props.onMouseEnter) {
+      props.onMouseEnter(e);
     }
   };
 
   return (
     <button
       onClick={handleClick}
+      onMouseEnter={handleMouseEnter}
       className={`relative overflow-hidden isolate text-white font-medium shadow-md transition-colors duration-200 ${className}`}
       {...props}
     >
-      {clicked && (
+      {mouseHover && (
         <motion.span
           initial={{ x: '-100%' }}
           animate={{ x: '100%' }}
           exit={{ x: '100%' }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
-          className="absolute inset-0 bg-[#ff73005b] z-0"
+          className="absolute inset-0 bg-[#1cec015b] z-0"
         />
       )}
 
-      {/* Conteúdo do botão */}
-      <span className="relative z-10">{children}</span>
+      {children}
     </button>
   );
 }
