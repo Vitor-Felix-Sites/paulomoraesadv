@@ -77,9 +77,7 @@ export default function RootLayout({
           content="advogado Recife, recuperação judicial, falência, direito das sucessões, terceiro setor, advogado empresarial, consultoria jurídica, Paulo Moraes"
         />
       </head>
-      <body
-        className='antialised'
-      >
+      <body>
         {children}
       </body>
     </html>

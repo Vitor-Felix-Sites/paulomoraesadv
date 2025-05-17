@@ -1,6 +1,10 @@
 @import "tailwindcss";
  
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --background: #1E2027;
   --textColor: #FFFFFF;
@@ -8,6 +12,7 @@
   --highlightColor: #DFAE4F;
   --foreground: #171717;
   --textDark: #1E2027;
+  --sectionBg: #F0EEE9;
 }
   /* font-family: "Playfair Display", serif; */
     /* font-family: "Poppins", sans-serif; */
@@ -27,12 +32,21 @@
   }
 }
 
+html{
+  height: 100vh;
+}
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, sans-serif;
-}
+  font-size: 14px;
+    color: #333;
+    min-height: 100%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
 
+}
 
 .v-bg {
   background-color: var(--background);
@@ -64,3 +78,58 @@ body {
 a{
   letter-spacing: 4px;
 }
+.container-default{
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+        padding-left: 24px;
+    padding-right: 24px;
+}
+header li {
+  white-space: nowrap;
+}
+#mobile-menu {
+  display: none;
+}
+#mobile-menu button{
+    width: 100%;
+}
+@media screen and (max-width: 991px) {
+    header ul li a {
+      font-size: .8rem;
+    }
+}
+
+@media(max-width: 900px){
+  #btn-contact{
+    display: none;
+  }
+}  
+@media(max-width: 768px){
+  header{
+    position: fixed;
+  }
+  #mobile-menu{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 120px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    #logo-mobile{
+      margin-bottom: 40px!important;
+    }
+  }
+  
+}   
+
+@media(max-width: 500px){
+    #mobile-menu {
+      font-size: 1rem;
+    }
+}
+
