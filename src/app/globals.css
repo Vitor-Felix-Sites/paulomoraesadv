@@ -39,13 +39,13 @@ html{
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, sans-serif;
   font-size: 14px;
     color: #333;
     min-height: 100%;
     margin: 0;
     font-size: 14px;
     line-height: 20px;
+    font-family: 'Mulish', sans-serif;
 
 }
 
@@ -102,50 +102,7 @@ header a {
   text-align: center;
   font-weight: bold;
 }
-@media screen and (max-width: 1034px) {
-    header ul li a {
-      font-size: .8rem;
-    }
-    #logo{
-      width: 60px;
-    }
-    #btn-contact{
-      display: none;
-    }
-}
 
-@media(max-width: 900px){
-  #btn-contact{
-    display: none;
-  }
-}  
-@media(max-width: 768px){
-  header{
-    position: fixed;
-  }
-  #mobile-menu{
-    display: flex;
-    position: fixed;
-    left: 0;
-    top: 105px;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-transform: uppercase;
-    #logo-mobile{
-      margin-bottom: 40px!important;
-    }
-  }
-
-}   
-
-@media(max-width: 500px){
-    #mobile-menu {
-      font-size: 1rem;
-    }
-}
 
 
 .header{
@@ -163,20 +120,14 @@ header a {
   margin-top: 20px;
 }
 
-@media(max-width: 768px){
-  .header{
-  padding: 20px 2rem;
 
-  }
-  .header::after{
-  left: 2rem;
-  right: 2rem;
-  }
-  .container-default{
-  padding: 20px 2rem;
-}
-}
 
+.hero-1{
+  width: 50%;
+}
+.hero-2{
+  width: 50%;
+}
 #hero{
   background: url('/texture.svg') no-repeat center center;
   height: 100vh;
@@ -187,18 +138,95 @@ header a {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.hero-bg{
+.hero-bg {
   position: absolute;
-  left: 0!important;
-  top: -2rem;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: auto;
+  max-width: 100%;
   z-index: -1;
+  object-fit: cover;
+  pointer-events: none;
 }
 
 
 
 
-.mulish{
+.playfair{
     font-family: 'Playfair Display', serif;
 
+}
+.mulish{
+    font-family: 'Mulish', sans-serif;
+}
+
+
+@media screen and (max-width: 1034px) {
+    header ul li a {
+      font-size: .8rem;
+    }
+    #logo{
+      width: 60px;
+    }
+    #btn-contact{
+      display: none;
+    }
+}
+
+@media(max-width: 900px){
+  #btn-contact{
+    display: none;
+  }
+  .hero-bg{
+      display: none;
+  }
+}  
+@media(max-width: 768px){
+
+.hero-1{
+  width: 100%!important;
+}
+.hero-2{
+  width: 0!important;
+}
+  header{
+    position: fixed;
+    background-color: var(--background);
+  }
+  #mobile-menu{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    #logo-mobile{
+      margin-bottom: 40px!important;
+    }
+  }
+
+   .header{
+  padding: 20px 2rem;
+
+  }
+  .header::after{
+  left: 2rem;
+  right: 2rem;
+  }
+  .container-default{
+  padding: 20px 2rem;
+}
+
+
+}   
+
+@media(max-width: 500px){
+    #mobile-menu {
+      font-size: 1rem;
+    }
 }

@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Playfair_Display, Poppins } from 'next/font/google';
+import { Playfair_Display, Poppins, Mulish } from 'next/font/google';
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -9,6 +9,11 @@ const playfairDisplay = Playfair_Display({
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],  
+});
+
+const mulish = Mulish({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata = {
@@ -39,11 +44,11 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
-    <html lang="pt-BR" className={`${poppins.className} ${playfairDisplay.className}`}>
-      <body className="antialised">
+    <html lang="pt-BR" className={`${poppins.className} ${playfairDisplay.className} ${mulish.className}`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>

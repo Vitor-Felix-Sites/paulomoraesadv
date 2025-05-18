@@ -42,7 +42,7 @@ export default function AnimatedButton({
           animate={{ x: '100%' }}
           exit={{ x: '100%' }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
-          className="absolute inset-0 bg-[#1cec015b] z-0"
+          className="absolute inset-0 bg-[#ffdd4566] z-0"
         />
       )}
 
