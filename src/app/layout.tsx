@@ -18,7 +18,7 @@ const mulish = Mulish({
 
 export const metadata = {
   title: "Paulo Moraes Advocacia e Consultoria Jurídica | Advogado em Recife",
-  description: "Escritório de advocacia em Recife especializado em direito empresarial, falências, recuperações judiciais e consultoria jurídica personalizada. Atendimento profissional e confiança para proteger seus direitos.",
+  description: "Escritório de advocacia em Recife especializado em direito do trabalho & previdenciário, Direito civil e família, consultoria jurídica personalizada. Atendimento profissional e confiança para proteger seus direitos.",
   keywords: [
     "advogado Recife",
     "advocacia empresarial",
@@ -30,10 +30,15 @@ export const metadata = {
     "direito empresarial",
     "consultoria jurídica",
     "advogado para empresas",
+    "direito civil",
+    "paulo moraes advocacia",
+    "paulo moraes advogado",
+    "paulo moraes",
+    "advogado paulo moraes",
   ],
   openGraph: {
     title: "Paulo Moraes Advocacia e Consultoria Jurídica",
-    description: "Atendimento jurídico especializado em direito empresarial, falências e recuperações judiciais. Proteja seus direitos com um advogado de confiança em Recife.",
+    description: "Escritório de advocacia em Recife especializado em direito do trabalho & previdenciário, Direito civil e família, consultoria jurídica personalizada. Atendimento profissional e confiança para proteger seus direitos.",
     url: "https://paulomoraesadv.com.br",  
     siteName: "Paulo Moraes Advocacia e Consultoria Jurídica",
     locale: "pt_BR",

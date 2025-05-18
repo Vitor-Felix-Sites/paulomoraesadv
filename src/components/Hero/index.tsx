@@ -12,12 +12,12 @@ const Hero = () => {
       </div>
 
       <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif leading-tight playfair" data-aos="fade-down">
-        Lorem ipsum dolor sit amet.
+        Exerça seus direitos.
       </h1>
 
       <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto md:mx-0 mulish" data-aos="fade-up">
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam obcaecati cupiditate iusto, libero laudantium architecto. Sint soluta non praesentium. Praesentium nihil beatae earum tempora distinctio! Veniam enim recusandae rem impedit?      </p>
-
+      O seu caso é a minha prioridade. Entre em contato comigo, envie sua dúvida e farei o possível para te responder com toda a atenção que você merece.
+      </p>
     <div className="flex flex-col md:flex-row gap-4 md:justify-start">
       <AnimatedButton className="v-bg-highlight py-4 px-8 text-white font-semibold uppercase" data-aos="flip-down">
         Fale comigo
