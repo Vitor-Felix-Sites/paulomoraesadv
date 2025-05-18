@@ -28,7 +28,6 @@ export const metadata = {
     shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
-  themeColor: '#ffffff',
   keywords: [
     "advogado Recife",
     "advocacia empresarial",
