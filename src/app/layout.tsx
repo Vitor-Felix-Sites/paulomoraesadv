@@ -1,4 +1,3 @@
-import Head from "next/head";
 import "./globals.css";
 import { Playfair_Display, Poppins, Mulish } from 'next/font/google';
 
