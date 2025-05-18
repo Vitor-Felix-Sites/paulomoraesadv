@@ -20,6 +20,16 @@ const mulish = Mulish({
 export const metadata = {
   title: "Paulo Moraes Advocacia e Consultoria Jurídica | Advogado em Recife",
   description: "Escritório de advocacia em Recife especializado em direito do trabalho & previdenciário, Direito civil e família, consultoria jurídica personalizada. Atendimento profissional e confiança para proteger seus direitos.",
+   manifest: '/site.webmanifest',
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32' },
+      { url: '/favicon-16x16.png', sizes: '16x16' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  themeColor: '#ffffff',
   keywords: [
     "advogado Recife",
     "advocacia empresarial",
@@ -54,14 +64,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="pt-BR" className={`${poppins.className} ${playfairDisplay.className} ${mulish.className}`}>
-      <Head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="theme-color" content="#ffffff" />
-      </Head>
       <body className="antialiased">
         {children}
       </body>
