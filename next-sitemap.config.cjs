@@ -1,4 +1,6 @@
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://paulomoraesadv.com.br',
+  siteUrl: "https://www.paulomoraesadv.com.br",
   generateRobotsTxt: true,
-}
+  sitemapSize: 7000,
+};
