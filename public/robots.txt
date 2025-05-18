@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://paulomoraesadv.com.br
+Host: https://www.paulomoraesadv.com.br
 
 # Sitemaps
-Sitemap: https://paulomoraesadv.com.br/sitemap.xml
+Sitemap: https://www.paulomoraesadv.com.br/sitemap.xml
