@@ -101,7 +101,7 @@ const PracticeAreas = () => {
               <h4 className={`text-4xl leading-tight w-full truncate ${area.styles?.title}`}>
                 {area.title}
               </h4>
-              <p className={`text-lg ${area.styles?.description}`}>                           
+              <p className={`text-lg pt-2 ${area.styles?.description}`}>                           
                 {area.description}
               </p>
               </div>
