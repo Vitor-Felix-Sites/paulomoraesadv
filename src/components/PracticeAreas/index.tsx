@@ -93,8 +93,8 @@ const PracticeAreas = () => {
           {practiceAreas.map((area, index) => (
             <div
               key={index}
-              data-aos="fade-up"
-              className={`bordered-items gap-y-6 ${area.styles?.content}`}
+              
+              className={`bordered-items gap-y-6 pb-12 ${area.styles?.content}`}
             >
               {area.icon}
               <div>
