@@ -11,6 +11,10 @@ const Hero = () => {
   <div className="w-full md:w-1/2 flex flex-col gap-6 md:gap-8 hero-1 md:text-left">
       <div className="flex items-center gap-4 md:justify-start">
         <div className="v-bg-highlight h-[2px] w-[54px] rounded" data-aos="fade-up"></div>
+        <h1 className="hidden">Paulo Moraes Advocacia e Consultoria Jurídica</h1>
+        <h1 className="hidden">Paulo Moraes Advocacia e Consultoria Jurídica</h1>
+        <h1 className="hidden">Paulo Moraes Advocacia e Consultoria Jurídica</h1>
+        <h1 className="hidden">Paulo Moraes Advocacia e Consultoria Jurídica</h1>
         <h3 className="text-white text-xl tracking-widest uppercase mulish" data-aos="fade-right">Paulo Moraes</h3>
       </div>
 
