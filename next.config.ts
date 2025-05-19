@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  // Outras configurações podem ser adicionadas aqui
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'paulomoraesadv.com.br',
+          },
+        ],
+        destination: 'https://www.paulomoraesadv.com.br/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

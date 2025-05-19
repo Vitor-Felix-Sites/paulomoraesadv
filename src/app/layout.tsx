@@ -17,7 +17,10 @@ const mulish = Mulish({
 
 export const metadata = {
    title: "Paulo Moraes Advocacia e Consultoria Jurídica | Advogado em Recife",
-  description: "Paulo Moraes Especialista em Advocacia e Consultoria Jurídica, direito do trabalho & previdenciário, Direito civil e família, consultoria jurídica personalizada. Atendimento profissional e confiança para proteger seus direitos.",
+   description: "Paulo Moraes Especialista em Advocacia e Consultoria Jurídica, direito do trabalho & previdenciário, Direito civil e família, consultoria jurídica personalizada. Atendimento profissional e confiança para proteger seus direitos.",
+   alternates: {
+    canonical: 'https://www.paulomoraesadv.com.br/',
+   },
    manifest: '/site.webmanifest',
   icons: {
     icon: [
