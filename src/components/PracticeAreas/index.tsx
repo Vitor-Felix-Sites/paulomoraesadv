@@ -95,6 +95,8 @@ const PracticeAreas = () => {
               key={index}
               
               className={`bordered-items gap-y-6 pb-12 ${area.styles?.content}`}
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
             >
               {area.icon}
               <div>
