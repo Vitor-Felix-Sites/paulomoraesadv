@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
    return (
-<section className="container-default min-h-[30vh]" id="hero">
+<section className="container-default h-[auto]" id="hero">
     <img src="/texture.webp" className='hero-bg' alt="Textura Paulo Moraes advogado" />
 
   <div className="flex flex-col md:flex-row justify-between gap-6">
@@ -31,17 +31,17 @@ const Hero = () => {
     </div>
     </div>
     
-<div className="h-[600px] w-full md:w-1/2 v-bg-highlight relative z-10 overflow-hidden"     data-aos="fade-up"
+<div className="h-[400px] md:h-[600px] w-full md:w-1/2 v-bg-highlight relative z-10 overflow-hidden"     data-aos="fade-up"
 data-aos-delay="200">
   <motion.span
-    className="absolute top-0 left-0 h-full w-full z-0"
+    className="absolute inset-0 h-[100%] w-full z-0"
     initial={{ x: '100vw', backgroundColor: '#383844' }}  
     animate={{ x: '0%' }}  
     transition={{
       x: { duration: 2, ease: 'easeInOut' },
       backgroundColor: { delay: 1, duration: 2 }
     }}
-  />
+  ></motion.span>
 </div>
   </div>
 </section>
