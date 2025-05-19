@@ -1,4 +1,3 @@
-import "./globals.css";
 import { Playfair_Display, Poppins, Mulish } from 'next/font/google';
 
 const playfairDisplay = Playfair_Display({

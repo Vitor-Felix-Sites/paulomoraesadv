@@ -1,15 +1,15 @@
 "use client"
 import { Header } from "@/components/Header";
-import Hero from "@/components/Hero";
 import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
+import "./globals.css";
+import Hero from "@/components/Hero";
+import AOS from "aos";
+import PracticeAreas from "@/components/PracticeAreas";
+import Spacement from "@/components/Spacement";
+import SpacementMobile from "@/components/SpacementMobile";
 
-const Spacement = () => {
-  return (
-    <div className="pt-[160px] w-full"></div>
-  );
-}
+
 
 
 export default function Home() {
@@ -20,9 +20,12 @@ export default function Home() {
   return (
     <div>
     <Header/>
-    <img src="/texture.svg" className='hero-bg' alt="Textura Paulo Moraes advogado" />
     <Spacement/>
     <Hero/>
+    <Spacement/>
+    <SpacementMobile/>
+    <PracticeAreas />
+    <Spacement/>
     </div>
   );
 }

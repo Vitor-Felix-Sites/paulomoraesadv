@@ -6,10 +6,12 @@ import { ReactNode, ComponentPropsWithoutRef, useState } from 'react';
 interface AnimatedButtonProps extends ComponentPropsWithoutRef<'button'> {
   children: ReactNode;
   className?: string;
+  withDefaultStyles?: boolean;
 }
 
 export default function AnimatedButton({
   children,
+  withDefaultStyles,
   className = '',
   ...props
 }: AnimatedButtonProps) {
@@ -33,13 +35,13 @@ export default function AnimatedButton({
     <button
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
-      className={`relative overflow-hidden isolate text-white font-medium shadow-md transition-colors duration-200 ${className}`}
+      className={`relative ${withDefaultStyles ? 'py-4 px-8' : ''} overflow-hidden isolate rounded text-white font-medium shadow-md transition-colors duration-200 ${className}`}
       {...props}
     >
       {mouseHover && (
         <motion.span
-          initial={{ x: '-100%' }}
-          animate={{ x: '100%' }}
+          initial={{ y: '100%' }}
+          animate={{ y: '-100%' }}
           exit={{ x: '100%' }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
           className="absolute inset-0 bg-[#ffdd4566] z-0"

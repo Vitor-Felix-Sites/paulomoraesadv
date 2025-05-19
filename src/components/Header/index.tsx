@@ -14,15 +14,16 @@ const AnimatedButtonContact: React.FC<AnimatedButtonContactProps> = ({
 }) => {
   return (
     <AnimatedButton
-      className="uppercase v-bg-highlight px-6 py-[14px] text-white gap-2"
+      className="uppercase v-bg-highlight text-white gap-2"
+      withDefaultStyles
       id={id}
       onClick={() => {
-        const url = 'https://api.whatsapp.com/send?phone=558184472360&text=Olá!%20Gostaria%20de%20mais%20informações.';
-          window.open(url, '_blank');
+        const url =
+          "https://api.whatsapp.com/send?phone=558184472360&text=Olá!%20Gostaria%20de%20mais%20informações.";
+        window.open(url, "_blank");
       }}
     >
-      
-      <p>Entre em contato</p>
+      Contato
     </AnimatedButton>
   );
 };
@@ -36,7 +37,6 @@ export const Header = () => {
       transition: {
         staggerChildren: 0.1,
         delayChildren: 0.1,
-        
       },
     },
   };
@@ -52,8 +52,8 @@ export const Header = () => {
       <header className="flex justify-between items-center py-[20px] px-[40px] relative header w-full">
         <div className="flex items-center gap-2">
           <Image
-            src="/logo-dourada.png"
-            alt="Logo Advogado Paulo Moraes"
+            src="/logo-dourada.webp"
+            alt="Logo Paulo Moraes Advocacia"
             width={80}
             height={80}
             id="logo"
@@ -63,16 +63,24 @@ export const Header = () => {
         <nav className="hidden md:flex items-center gap-[22px] text-white">
           <ul className="flex gap-[42px] uppercase">
             <li>
-              <a className="hover:text-[#DFAE4F]" href="#">Início</a>
+              <a className="hover:text-[#DFAE4F]" href="#">
+                Início
+              </a>
             </li>
             <li>
-              <a className="hover:text-[#DFAE4F]" href="#">Escritório</a>
+              <a className="hover:text-[#DFAE4F]" href="#">
+                Escritório
+              </a>
             </li>
             <li>
-              <a className="hover:text-[#DFAE4F]" href="#">Áreas de atuação</a>
+              <a className="hover:text-[#DFAE4F]" href="#practice-areas">
+                Áreas de atuação
+              </a>
             </li>
             <li>
-              <a className="hover:text-[#DFAE4F]" href="#">FAQ</a>
+              <a className="hover:text-[#DFAE4F]" href="#">
+                FAQ
+              </a>
             </li>
           </ul>
           <AnimatedButtonContact id="btn-contact" />
@@ -81,6 +89,7 @@ export const Header = () => {
         <div className="md:hidden flex items-center gap-4">
           <AnimatedButton
             className="v-bg-highlight w-12 h-12 rounded-full flex items-center justify-center"
+            withDefaultStyles={false}
             onClick={() => setIsOpen(!isOpen)}
           >
             <AnimatePresence mode="wait" initial={false}>
@@ -120,12 +129,19 @@ export const Header = () => {
             className="w-full v-bg flex flex-col gap-6 p-6 text-white container-default w-container"
             id="mobile-menu"
           >
-            {["Início", "Escritório", "Áreas de atuação", "FAQ"].map((text) => (
+            {[
+              { text: "Início", href: "#" },
+              { text: "Escritório", href: "#escritorio" },
+              { text: "Áreas de atuação", href: "#practice-areas" },
+              { text: "FAQ", href: "#faq" },
+            ].map(({ text, href }) => (
               <motion.a
                 key={text}
-                href="#"
+                href={href}
                 variants={itemVariants}
-                className="block"
+                className="block hover:text-[#DFAE4F] transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+                whileHover={{ scale: 1.05 }}
               >
                 {text}
               </motion.a>

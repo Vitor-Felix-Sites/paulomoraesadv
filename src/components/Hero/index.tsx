@@ -1,13 +1,16 @@
 import React from "react";
 import AnimatedButton from "../AnimatedButton";
+import { motion } from "framer-motion";
 
 const Hero = () => {
    return (
-<section className="container-default">
-  <div className="flex flex-col md:flex-row justify-between">
-    <div className="flex flex-col gap-6 hero-1 md:text-left">
+<section className="container-default min-h-[30vh]" id="hero">
+    <img src="/texture.webp" className='hero-bg' alt="Textura Paulo Moraes advogado" />
+
+  <div className="flex flex-col md:flex-row justify-between gap-6">
+  <div className="w-full md:w-1/2 flex flex-col gap-6 md:gap-8 hero-1 md:text-left">
       <div className="flex items-center gap-4 md:justify-start">
-        <div className="v-bg-highlight h-[2px] w-[54px]" data-aos="fade-up"></div>
+        <div className="v-bg-highlight h-[2px] w-[54px] rounded" data-aos="fade-up"></div>
         <h3 className="text-white text-xl tracking-widest uppercase mulish" data-aos="fade-right">Paulo Moraes</h3>
       </div>
 
@@ -19,16 +22,27 @@ const Hero = () => {
       O seu caso é a minha prioridade. Entre em contato comigo, envie sua dúvida e farei o possível para te responder com toda a atenção que você merece.
       </p>
     <div className="flex flex-col md:flex-row gap-4 md:justify-start">
-      <AnimatedButton className="v-bg-highlight py-4 px-8 text-white font-semibold uppercase" data-aos="flip-down">
+      <AnimatedButton withDefaultStyles className="v-bg-highlight text-white font-semibold uppercase" data-aos="flip-down">
         Fale comigo
       </AnimatedButton>
-      <AnimatedButton className="border border-white py-4 px-8 text-white font-semibold uppercase" data-aos="flip-down">
+      <AnimatedButton withDefaultStyles className="border border-white text-white font-semibold uppercase" data-aos="flip-down">
         Resultados
       </AnimatedButton>
     </div>
     </div>
-
-    <div className="hero-2 mt-10 md:mt-0"></div>
+    
+<div className="h-[600px] w-full md:w-1/2 v-bg-highlight relative z-10 overflow-hidden"     data-aos="fade-up"
+data-aos-delay="200">
+  <motion.span
+    className="absolute top-0 left-0 h-full w-full z-0"
+    initial={{ x: '100vw', backgroundColor: '#383844' }}  
+    animate={{ x: '0%' }}  
+    transition={{
+      x: { duration: 2, ease: 'easeInOut' },
+      backgroundColor: { delay: 1, duration: 2 }
+    }}
+  />
+</div>
   </div>
 </section>
   );
