@@ -8,6 +8,7 @@ import AOS from "aos";
 import PracticeAreas from "@/components/PracticeAreas";
 import Spacement from "@/components/Spacement";
 import SpacementMobile from "@/components/SpacementMobile";
+import SplitOpenLinesFullScreen from "@/components/SplitOpenLinesFullScreen";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
     }, []);
   return (
     <div>
+    <SplitOpenLinesFullScreen/>
     <Header/>
     <Spacement/>
     <Hero/>
