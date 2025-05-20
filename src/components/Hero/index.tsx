@@ -18,7 +18,7 @@ const Hero = () => {
         <h3 className="text-white text-xl tracking-widest uppercase mulish" data-aos="fade-right">Paulo Moraes</h3>
       </div>
 
-      <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif leading-tight playfair" data-aos="fade-down">
+      <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif leading-tight playfair" data-aos="fade-down" >
         Exerça seus direitos.
       </h1>
 
@@ -43,7 +43,7 @@ data-aos-delay="200">
     animate={{ x: '0%' }}  
     transition={{
       x: { duration: 2, ease: 'easeInOut' },
-      backgroundColor: { delay: 1, duration: 2 }
+      backgroundColor: { delay: 2, duration: 2 }
     }}
   ></motion.span>
 </div>
