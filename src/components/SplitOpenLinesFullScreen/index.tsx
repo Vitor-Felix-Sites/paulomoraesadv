@@ -16,12 +16,11 @@ export default function SplitOpenLinesFullScreen() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
       />
 
-      {/* Parte de baixo (amarela) */}
       <motion.div
         className="absolute bottom-0 left-0 right-0 v-bg-highlight"
         initial={{ height: "50vh" }}
         animate={{ height: "0vh" }}
-        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
         onAnimationComplete={() => setHidden(true)}
       />
 
@@ -36,7 +35,7 @@ export default function SplitOpenLinesFullScreen() {
         className="absolute left-0 right-0 h-1  top-1/2"
         initial={{ y: 0 }}
         animate={{ y: "50vh" }}
-        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
       />
     </div>
   );
