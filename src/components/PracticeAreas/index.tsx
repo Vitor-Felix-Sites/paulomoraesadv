@@ -81,7 +81,7 @@ const PracticeAreas = () => {
   return (
     <section className="flex justify-center text-white  container-default" id="practice-areas">
       <div>
-        <div className="flex justify-between items-center py-20">
+        <div className="flex justify-between items-center">
           <div>
             <h2 className="text-4xl font-bold leading-tight playfair" data-aos="fade-up">
               Áreas de atuação

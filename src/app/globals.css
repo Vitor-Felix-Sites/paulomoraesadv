@@ -127,7 +127,7 @@ header a {
 }
 
 #hero {
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
