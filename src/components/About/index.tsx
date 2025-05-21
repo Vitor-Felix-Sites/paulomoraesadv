@@ -36,24 +36,24 @@ const About = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex flex-col  justify-center gap-8">
-        <span className="uppercase text-sm tracking-widest text-gray-600 font-bold mulish">Sobre o escritório </span>
-        <h2 className="text-4xl md:text-5x1 font-serif font-semibold mt-4 text-gray-900 playfair leading-snug">
+        <span className="uppercase text-sm tracking-widest text-gray-600 font-bold mulish" data-aos="fade-down">Sobre o escritório </span>
+        <h2 className="text-4xl md:text-5x1 font-serif font-semibold mt-4 text-gray-900 playfair leading-snug" data-aos="fade-left">
           Um escritório preparado
           <br className="hidden sm:block" /> para defender seus direitos
         </h2>
-        <p className="text-lg text-gray-700 mt-6 leading-relaxed max-w-xl">
+        <p className="text-lg text-gray-700 mt-6 leading-relaxed max-w-xl" data-aos="fade-left">
           O <strong>Escritório Paulo Moraes</strong> atua com seriedade e excelência nas áreas
           de <strong>Direito Civil</strong>, <strong>Trabalhista</strong> e <strong>do Consumidor</strong>,
           oferecendo soluções jurídicas claras, eficazes e com total comprometimento.
         </p>
 
         <div>
-          <p className="mt-2 font-medium text-gray-800">Paulo Moraes</p>
-          <p className="text-sm text-yellow-600 font-semibold uppercase tracking-wide">
+          <p className="mt-2 font-medium text-gray-800" data-aos="fade-left">Paulo Moraes</p>
+          <p className="text-sm text-yellow-600 font-semibold uppercase tracking-wide" data-aos="fade-left">
             Fundador do Escritório
           </p>
         </div>
-          <AnimatedButton withDefaultStyles className='v-bg-highlight uppercase mt-10'  onClick={() => {
+          <AnimatedButton withDefaultStyles className='v-bg-highlight uppercase mt-10' data-aos="fade-up"  onClick={() => {
         const url =
           "https://api.whatsapp.com/send?phone=558184472360&text=Olá!%20Gostaria%20de%20mais%20informações.";
         window.open(url, "_blank");
