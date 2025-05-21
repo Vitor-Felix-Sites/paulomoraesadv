@@ -9,6 +9,7 @@ import PracticeAreas from "@/components/PracticeAreas";
 import Spacement from "@/components/Spacement";
 import SpacementMobile from "@/components/SpacementMobile";
 import SplitOpenLinesFullScreen from "@/components/SplitOpenLinesFullScreen";
+import About from "@/components/About";
 
 
 
@@ -25,6 +26,7 @@ export default function Home() {
     <Spacement/>
     <Hero/>
     <Spacement/>
+    <About/>
     <SpacementMobile/>
     <PracticeAreas />
     <Spacement/>

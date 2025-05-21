@@ -85,7 +85,7 @@ a {
 }
 
 .container-default {
-  @apply py-5 px-[10rem];
+  @apply py-20 px-[10rem];
 }
 
 header li {

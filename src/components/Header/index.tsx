@@ -68,7 +68,7 @@ export const Header = () => {
               </a>
             </li>
             <li>
-              <a className="hover:text-[#DFAE4F]" href="#">
+              <a className="hover:text-[#DFAE4F]" href="#escritorio">
                 Escritório
               </a>
             </li>

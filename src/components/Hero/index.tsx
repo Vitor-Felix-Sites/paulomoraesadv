@@ -1,6 +1,7 @@
 import React from "react";
 import AnimatedButton from "../AnimatedButton";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hero = () => {
    return (
@@ -26,7 +27,11 @@ const Hero = () => {
       O seu caso é a minha prioridade. Entre em contato comigo, envie sua dúvida e farei o possível para te responder com toda a atenção que você merece.
       </p>
     <div className="flex flex-col md:flex-row gap-4 md:justify-start">
-      <AnimatedButton withDefaultStyles className="v-bg-highlight text-white font-semibold uppercase" data-aos="flip-down">
+      <AnimatedButton withDefaultStyles className="v-bg-highlight text-white font-semibold uppercase" data-aos="flip-down"  onClick={() => {
+        const url =
+          "https://api.whatsapp.com/send?phone=558184472360&text=Olá!%20Gostaria%20de%20mais%20informações.";
+        window.open(url, "_blank");
+      }}>
         Fale comigo
       </AnimatedButton>
       <AnimatedButton withDefaultStyles className="border border-white text-white font-semibold uppercase" data-aos="flip-down">
@@ -45,7 +50,10 @@ data-aos-delay="200">
       x: { duration: 2, ease: 'easeInOut' },
       backgroundColor: { delay: 2, duration: 2 }
     }}
-  ></motion.span>
+  >
+              <Image src="/paulo.webp" width={1800} height={1800} className='w-full h-full object-cover' alt='Paulo Moraes advocacia'/>
+    
+  </motion.span>
 </div>
   </div>
 </section>
