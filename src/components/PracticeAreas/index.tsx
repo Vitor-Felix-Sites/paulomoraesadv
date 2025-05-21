@@ -13,7 +13,7 @@ const practiceAreas = [
     title: "Direito Civil e Família",
     icon: <Gavel className="w-12 h-12 text-yellow-500" />,
     description:
-      "Há anos defendendo os interesses dos que mais precisam, com inúmeros casos de sucesso ações de divórcio, guarda, alimentos e partilha de bens.",
+      "Há anos defendendo os interesses dos que mais precisam, com inúmeros casos de sucesso em ações de divórcio, guarda, alimentos e partilha de bens.",
       styles:{
         title: 'text-lg mt-[60px] font-semibold mb-2 uppercase tracking-wide',
         description: 'text-gray-400 leading-relaxed',
@@ -24,7 +24,7 @@ const practiceAreas = [
     title: "Direito Médico",
     icon: <Hospital  className="w-12 h-12 text-yellow-500" />,
    description:
-      "Acompanho inúmeras pessoas no momento que mais necessitam veem seu direito a saúde negado arbitrariamente pelas operadoras de plano de saúde.",
+      "Acompanho inúmeras pessoas no momento que mais necessitam e veem seu direito a saúde negado arbitrariamente pelas operadoras de plano de saúde.",
       styles:{
         title: 'text-lg mt-[60px] font-semibold mb-2 uppercase tracking-wide',
         description: 'text-gray-400 leading-relaxed',
