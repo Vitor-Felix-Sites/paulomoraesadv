@@ -9,7 +9,6 @@ import PracticeAreas from "@/components/PracticeAreas";
 import Spacement from "@/components/Spacement";
 import SpacementMobile from "@/components/SpacementMobile";
 import SplitOpenLinesFullScreen from "@/components/SplitOpenLinesFullScreen";
-import ElfsightWidget from "@/components/ElfsightWidget";
 
 
 
@@ -29,8 +28,6 @@ export default function Home() {
     <SpacementMobile/>
     <PracticeAreas />
     <Spacement/>
-          <ElfsightWidget />
-
     </div>
   );
 }
