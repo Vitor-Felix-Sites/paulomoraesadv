@@ -4,7 +4,7 @@ import AnimatedButton from '../AnimatedButton';
 
 const About = () => {
   return (
-    <section className="container-default bg-white flex flex-col-reverse md:flex-col lg:flex-row items-start justify-between gap-12" id='escritorio'>
+    <section className="container-default bg-white flex flex-col-reverse md:flex-col lg:flex-row items-start justify-between gap-12 w-screen overflow-x-hidden" id='escritorio'>
       <div className="w-full lg:w-1/2 flex">
         <div
           className="h-[400px] md:h-[600px] w-full lg:max-w-full v-bg-highlight relative z-10 overflow-hidden"
@@ -13,7 +13,7 @@ const About = () => {
         >
           <motion.div
             className="absolute inset-0 h-full w-full z-0"
-            initial={{ x: '100vw', backgroundColor: '#383844' }}
+            initial={{ x: '100%', backgroundColor: '#383844' }}
             animate={{ x: '0%' }}
             transition={{
               x: { duration: 2, ease: 'easeInOut' },
@@ -27,40 +27,71 @@ const About = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            width="1000"
-            height="1000"
             aria-label="Mapa do escritório Paulo Moraes"
             />
           </motion.div>
         </div>
       </div>
 
-      <div className="w-full lg:w-1/2 flex flex-col  justify-center gap-8">
-        <span className="uppercase text-sm tracking-widest text-gray-600 font-bold mulish" data-aos="fade-down">Sobre o escritório </span>
-        <h2 className="text-4xl md:text-5x1 font-serif font-semibold mt-4 text-gray-900 playfair leading-snug" data-aos="fade-left">
-          Um escritório preparado
-          <br className="hidden sm:block" /> para defender seus direitos
-        </h2>
-        <p className="text-lg text-gray-700 mt-6 leading-relaxed max-w-xl" data-aos="fade-left">
-          O <strong>Escritório Paulo Moraes</strong> atua com seriedade e excelência nas áreas
-          de <strong>Direito Civil</strong>, <strong>Trabalhista</strong> e <strong>do Consumidor</strong>,
-          oferecendo soluções jurídicas claras, eficazes e com total comprometimento.
-        </p>
+  <div className="w-full lg:w-1/2 flex flex-col justify-center gap-8">
+  <span
+    className="uppercase text-sm tracking-widest text-gray-600 font-bold mulish"
+    data-aos="fade-down"
+  >
+    Sobre o escritório
+  </span>
 
-        <div>
-          <p className="mt-2 font-medium text-gray-800" data-aos="fade-left">Paulo Moraes</p>
-          <p className="text-sm text-yellow-600 font-semibold uppercase tracking-wide" data-aos="fade-left">
-            Fundador do Escritório
-          </p>
-        </div>
-          <AnimatedButton withDefaultStyles className='v-bg-highlight uppercase mt-10' data-aos="fade-up"  onClick={() => {
-        const url =
-          "https://api.whatsapp.com/send?phone=558184472360&text=Olá!%20Gostaria%20de%20mais%20informações.";
-        window.open(url, "_blank");
-      }}>
-            Agendar uma consulta
-          </AnimatedButton>
-      </div>
+  <h2
+    className="text-4xl md:text-5x1 font-serif font-semibold mt-4 text-gray-900 playfair leading-snug"
+    data-aos="fade-left"
+  >
+    Um escritório preparado
+    <br className="hidden sm:block" /> para defender seus direitos
+  </h2>
+
+  <p
+    className="text-lg text-gray-700 mt-6 leading-relaxed max-w-xl"
+    data-aos="fade-left"
+  >
+    O <strong>Escritório Moraes Advocacia</strong> atua com seriedade e excelência nas áreas de
+    <strong> Direito Civil</strong>, <strong> Previdenciário</strong>, <strong> Trabalhista</strong>,
+    <strong> Consumidor</strong>, <strong> Bancário</strong>, <strong> Imobiliário</strong>,
+    <strong> Sucessório</strong>, <strong> Falências e Recuperações Judiciais</strong>. Também possui
+    atuação em <strong>Direito Público</strong> e no registro de
+    <strong> Marcas e Patentes</strong>, oferecendo soluções jurídicas claras, eficazes e com total comprometimento.
+  </p>
+
+  <p
+    className="text-lg text-gray-700 mt-4 leading-relaxed max-w-xl"
+    data-aos="fade-left"
+  >
+    <strong>Paulo Moraes</strong>, fundador do escritório, é formado em Direito pela Universidade Católica de Pernambuco
+    e pós-graduado em Direito Civil e Processo Civil pela <strong>ESA</strong> – Escola Superior de Advocacia da <strong>OAB/PE</strong>.
+  </p>
+
+  <div>
+    <p className="mt-2 font-medium text-gray-800" data-aos="fade-left">Paulo Moraes</p>
+    <p
+      className="text-sm text-yellow-600 font-semibold uppercase tracking-wide"
+      data-aos="fade-left"
+    >
+      Fundador do Escritório
+    </p>
+  </div>
+
+  <AnimatedButton
+    withDefaultStyles
+    className="v-bg-highlight uppercase mt-10"
+    data-aos="fade-up"
+    onClick={() => {
+      const url =
+        "https://api.whatsapp.com/send?phone=558184472360&text=Olá!%20Gostaria%20de%20mais%20informações.";
+      window.open(url, "_blank");
+    }}
+  >
+    Agendar uma consulta
+  </AnimatedButton>
+</div>
     </section>
   );
 };
