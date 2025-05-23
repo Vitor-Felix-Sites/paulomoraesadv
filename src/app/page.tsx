@@ -6,11 +6,11 @@ import "./globals.css";
 import Hero from "@/sections/Hero";
 import AOS from "aos";
 import PracticeAreas from "@/sections/PracticeAreas";
-import SplitOpenLinesFullScreen from "@/sections/SplitOpenLinesFullScreen";
 import About from "@/sections/About";
 import Faq from "@/sections/Faq";
 import Footer from "@/sections/Footer";
 import Spacement from "@/components/Spacement";
+import SplitOpenLinesFullScreen from "@/components/SplitOpenLinesFullScreen";
 
 
 

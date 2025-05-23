@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimatedButton from '../AnimatedButton';
+import AnimatedButton from '../../components/AnimatedButton';
 
 const About = () => {
   return (

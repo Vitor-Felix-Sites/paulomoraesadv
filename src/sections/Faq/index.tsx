@@ -49,10 +49,10 @@ const Faq = () => {
 
   return (
     <section className="container-default" id="faq">
-      <h2 className="text-3xl font-bold text-white mb-10 uppercase tracking-wide playfair" data-aos="fade-right">
-        Faq
-      </h2>
-      <div className="space-y-4 pt-12">
+          <h2 className="text-4xl font-bold leading-tight playfair text-white" data-aos="fade-up">
+              FAQ
+            </h2>
+      <div className="space-y-4 pt-8">
         {faq.map((item, index) => (
           <div
             key={index}
@@ -61,14 +61,14 @@ const Faq = () => {
           >
             <button
               onClick={() => toggle(index)}
-              className="w-full px-6 py-4 flex items-center justify-between text-left text-white font-medium text-lg"
+              className={`${ activeIndex === index ? 'v-text' : ''} w-full px-6 py-4 flex items-start justify-between text-left text-white font-medium text-lg`}
             >
               {item.question}
               <motion.span
                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <ChevronDown className="w-6 h-6" />
+                <ChevronDown color={activeIndex == index ? '#DFAE4F' : 'white'} className={`${ activeIndex === index ? 'v-text' : ''}w-6 h-6`} />
               </motion.span>
             </button>
             <AnimatePresence initial={false}>
