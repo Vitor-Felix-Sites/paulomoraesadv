@@ -6,6 +6,7 @@ import {
   Handshake,
   Banknote,
   Hospital,
+  HeartHandshake,
 } from "lucide-react";
 
 const practiceAreas = [
@@ -55,7 +56,7 @@ const practiceAreas = [
   },
   {
     title: "Terceiro Setor",
-    icon: <Handshake className="w-12 h-12 text-yellow-500" />,
+    icon: <HeartHandshake className="w-12 h-12 text-yellow-500" />,
     description:
       "Assessoria jurídica completa para fundações, associações e ONGs, incluindo regularização, elaboração de estatutos, compliance, captação de recursos e parcerias com o poder público.",
       styles:{
@@ -74,6 +75,37 @@ const practiceAreas = [
         content: 'gap-8 pr-6 py-6 flex flex-col bordered-items sm:pl-8 lg:pl-8'
       },
       icon: <Banknote className="w-12 h-12 text-yellow-500"/>
+  },
+  {
+  title: "Gestão jurídica de contratos empresariais",
+    icon: <Handshake className="w-12 h-12 text-yellow-500" />,
+    description:
+      "Atuação estratégica na elaboração, revisão e negociação de contratos empresariais, garantindo segurança jurídica, prevenção de litígios e alinhamento com os objetivos comerciais do cliente.",
+      styles:{
+        title: 'text-lg mt-[60px] font-semibold mb-2 uppercase tracking-wide',
+        description: 'text-gray-400 leading-relaxed',
+        content: 'gap-8 pr-6 py-6 flex flex-col bordered-items sm:pl-0 lg:pl-0'
+      }
+ },
+   {
+    title: "",
+    description:
+      " ",
+      styles:{
+        title: 'text-lg mt-[60px] font-semibold mb-2 uppercase tracking-wide',
+        description: 'text-gray-400 leading-relaxed',
+        content: 'gap-8 pr-6 py-6 flex flex-col bordered-items sm:pl-8 lg:pl-8'
+      },
+  },
+     {
+    title: " ",
+    description:
+      " ",
+      styles:{
+        title: 'text-lg mt-[60px] font-semibold mb-2 uppercase tracking-wide',
+        description: 'text-gray-400 leading-relaxed',
+        content: 'gap-8 pr-6 py-6 flex flex-col bordered-items sm:pl-8 lg:pl-8'
+      },
   },
 ];
 
