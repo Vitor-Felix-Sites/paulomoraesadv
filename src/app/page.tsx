@@ -1,15 +1,17 @@
 "use client"
-import { Header } from "@/components/Header";
+import { Header } from "@/sections/Header";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import "./globals.css";
-import Hero from "@/components/Hero";
+import Hero from "@/sections/Hero";
 import AOS from "aos";
-import PracticeAreas from "@/components/PracticeAreas";
-import Spacement from "@/components/Spacement";
-import SpacementMobile from "@/components/SpacementMobile";
-import SplitOpenLinesFullScreen from "@/components/SplitOpenLinesFullScreen";
-import About from "@/components/About";
+import PracticeAreas from "@/sections/PracticeAreas";
+import Spacement from "@/sections/Spacement";
+import SpacementMobile from "@/sections/SpacementMobile";
+import SplitOpenLinesFullScreen from "@/sections/SplitOpenLinesFullScreen";
+import About from "@/sections/About";
+import Faq from "@/sections/Faq";
+import Footer from "@/sections/Footer";
 
 
 
@@ -27,9 +29,12 @@ export default function Home() {
     <Hero/>
     <Spacement/>
     <About/>
+    <Spacement/>
     <SpacementMobile/>
     <PracticeAreas />
+    <Faq/>
     <Spacement/>
+    <Footer/>
     </div>
   );
 }

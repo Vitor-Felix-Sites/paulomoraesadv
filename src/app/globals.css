@@ -79,6 +79,9 @@ body {
 .v-text-dark {
   color: var(--textDark);
 }
+.v-text{
+  color: var(--highlightColor);
+}
 
 a {
   letter-spacing: 4px;
@@ -328,6 +331,12 @@ header a {
   .bordered-items:nth-child(6) {}
     .bordered-items:nth-child(7){
   border-right: 0;
+}
+.bordered-items:nth-child(8){
+  display: none;
+}
+.bordered-items:nth-child(9){
+  display: none;
 }
 }
 
