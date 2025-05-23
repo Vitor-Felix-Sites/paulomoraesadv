@@ -6,12 +6,11 @@ import "./globals.css";
 import Hero from "@/sections/Hero";
 import AOS from "aos";
 import PracticeAreas from "@/sections/PracticeAreas";
-import Spacement from "@/sections/Spacement";
-import SpacementMobile from "@/sections/SpacementMobile";
 import SplitOpenLinesFullScreen from "@/sections/SplitOpenLinesFullScreen";
 import About from "@/sections/About";
 import Faq from "@/sections/Faq";
 import Footer from "@/sections/Footer";
+import Spacement from "@/components/Spacement";
 
 
 
@@ -30,7 +29,6 @@ export default function Home() {
     <Spacement/>
     <About/>
     <Spacement/>
-    <SpacementMobile/>
     <PracticeAreas />
     <Faq/>
     <Spacement/>
